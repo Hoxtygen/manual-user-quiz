@@ -4,7 +4,11 @@ import HomePage from "src/features/home/HomePage";
 import { GetServerSideProps } from "next";
 import { QuizQuestion } from "src/typeDef";
 
-export default function Home({ questions }: QuizQuestion) {
+type QuizData = {
+  questions: QuizQuestion[];
+};
+
+export default function Home({ questions }: QuizData) {
   return (
     <main className="">
       <HomePage quizQuestions={questions} />
