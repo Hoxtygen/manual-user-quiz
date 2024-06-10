@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="sm:py-0 sm:px-[9.5%] bg-[#8b968d] p-0">
       <div className="grid gap-8 py-28 px-4 grid-cols-footer md:grid-cols-footer-tablet md:py-28 md:px-8">
-        <figure>
+        <figure className="max-sm:hidden">
           <Image
             src="/assets/svgs/logo.svg"
             alt="manual logo"
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
         <div>
           <h6>Follow us</h6>
-          <div className="flex border">
+          <div className="flex">
             <Image
               src="/assets/svgs/social-facebook.svg"
               alt="facebook icon"
